@@ -1,6 +1,8 @@
 2Checkout Node.js Library
 =====================
 
+Full documentation for each binding is provided in the **[wiki](https://github.com/2Checkout/2checkout-node/wiki)**.
+
 This library provides developers with a simple set of bindings to the 2Checkout Payment API, Hosted Checkout, Instant Notification Service and Admin API.
 
 To use, download or clone the repository and install with npm.
@@ -232,3 +234,5 @@ tco.checkout.authorize(params, function (error, data) {
     }
 });
 ```
+
+Full documentation for each binding is provided in the **[wiki](https://github.com/2Checkout/2checkout-node/wiki)**.
