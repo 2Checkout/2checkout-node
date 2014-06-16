@@ -30,7 +30,7 @@ var tco = new Twocheckout({
 });
 ```
 
-Example Purchase API Usage
+Example Payment API Usage
 -----------------
 
 *Example Request:*
