@@ -6,7 +6,12 @@ describe('coupons', function(){
     describe('list()', function(){
         it('should return a successful response', function(done){
             tco.coupons.list(function (error, data) {
-                assert.ok(data.coupon);
+                if (error) {
+                    assert.ok(error.code);
+                    assert.ok(error.message);
+                } else {
+                    assert.ok(data.coupon);
+                }
                 done();
             });
         });
@@ -15,9 +20,14 @@ describe('coupons', function(){
     describe('create()', function(){
         it('should return a successful response', function(done){
             tco.coupons.create(coupon_create, function (error, data) {
-                assert.ok(data.coupon_code);
-                coupon_data.coupon_code = data.coupon_code;
-                coupon_update.coupon_code = data.coupon_code;
+                if (error) {
+                    assert.ok(error.code);
+                    assert.ok(error.message);
+                } else {
+                    assert.ok(data.coupon_code);
+                    coupon_data.coupon_code = data.coupon_code;
+                    coupon_update.coupon_code = data.coupon_code;
+                }
                 done();
             });
         });
@@ -26,7 +36,12 @@ describe('coupons', function(){
     describe('retrieve()', function(){
         it('should return a successful response', function(done){
             tco.coupons.retrieve(coupon_data, function (error, data) {
-                assert.equal(coupon_data.coupon_code, data.coupon.coupon_code);
+                if (error) {
+                    assert.ok(error.code);
+                    assert.ok(error.message);
+                } else {
+                    assert.equal(coupon_data.coupon_code, data.coupon.coupon_code);
+                }
                 done();
             });
         });
@@ -35,7 +50,12 @@ describe('coupons', function(){
     describe('update()', function(){
         it('should return a successful response', function(done){
             tco.coupons.update(coupon_update, function (error, data) {
-                assert.equal("OK", data.response_code);
+                if (error) {
+                    assert.ok(error.code);
+                    assert.ok(error.message);
+                } else {
+                    assert.equal("OK", data.response_code);
+                }
                 done();
             });
         });
@@ -44,7 +64,12 @@ describe('coupons', function(){
     describe('delete()', function(){
         it('should return a successful response', function(done){
             tco.coupons.delete(coupon_update, function (error, data) {
-                assert.equal("OK", data.response_code);
+                if (error) {
+                    assert.ok(error.code);
+                    assert.ok(error.message);
+                } else {
+                    assert.equal("OK", data.response_code);
+                }
                 done();
             });
         });

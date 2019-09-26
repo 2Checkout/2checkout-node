@@ -1,12 +1,12 @@
 {
     "name": "2checkout-node",
-    "version": "0.0.1",
-    "description" : "A node.js wrapper for the 2Checkout Payment API.",
-    "author" : "Craig Christenson <christensoncraig@gmail.com>",
-    "main" : "lib/2checkout.js",
-    "repository" : {
-        "type" : "git",
-        "url" : "http://github.com/2Checkout/2checkout-node.git"
+    "version": "1.0.0",
+    "description": "A node.js wrapper for the 2Checkout Payment API.",
+    "author": "Craig Christenson <christensoncraig@gmail.com>",
+    "main": "lib/2checkout.js",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/2Checkout/2checkout-node.git"
     },
     "engines": {
         "node": ">= v0.8.0"
