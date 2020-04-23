@@ -26,7 +26,6 @@ var tco = new Twocheckout({
     privateKey: "3508079E-5383-44D4-BF69-DC619C0D9811",     // Payment API private key, required for checkout.authorize binding
     secretWord: "tango",                                    // Secret Word, required for response and notification checks
     demo: true,                                             // Set to true if testing response with demo sales
-    sandbox: false                                          // Uses 2Checkout sandbox URL for all bindings
 });
 ```
 

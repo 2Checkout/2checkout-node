@@ -75,19 +75,6 @@ describe('sales', function(){
         });
     });
 
-    describe('reauth()', function(){
-        it('should return a successful response or error', function(done){
-            tco.sales.reauth(sale_reauth, function (error, data) {
-                if (error) {
-                    assert.ok(error.code);
-                    assert.ok(error.message);
-                } else {
-                    assert.equal("OK", data.response_code);
-                }
-                done();
-            });
-        });
-    });
 
     describe('comment()', function(){
         it('should return a successful response or error', function(done){
