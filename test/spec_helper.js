@@ -53,15 +53,15 @@ product_data = {
 
 //notification data
 notification = {
-    invoice_id: "250342762741",
+    invoice_id: "4632527490",
     md5_hash: "4FB7CD1CD57BBEFCCA462F3DE823C50A",
-    sale_id: "250342762742"
+    sale_id: "4632527448"
 };
 
 //response data
 response = {
     key: '7AB926D469648F3305AE361D5BD2C3CB',
-    order_number: '250342762742'
+    order_number: '4632527448'
 };
 
 //authorize data
@@ -70,6 +70,7 @@ authorize = {
     "token": "MWQyYTI0ZmUtNjhiOS00NTIxLTgwY2MtODc3MWRlNmZjY2Jh",
     "currency": "USD",
     "total": "10.00",
+    "demo": true,
     "billingAddr": {
         "name": "John Doe",
         "addrLine1": "123 Test St",
