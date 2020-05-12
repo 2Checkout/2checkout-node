@@ -6,9 +6,9 @@ describe('checkout', function(){
         it('should return a success or unauthorized response', function(done){
             tco.checkout.authorize(authorize, function (error, data) {
                 if (error) {
-                    assert.equal("Error: Unauthorized", error);
+                    return assert.equal("Unauthorized", error.message);
                 } else {
-                    assert.equal("APPROVED", data.response.responseCode);
+                    return assert.equal("APPROVED", data.response.responseCode);
                 }
                 done();
             });

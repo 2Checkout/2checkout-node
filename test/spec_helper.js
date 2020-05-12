@@ -1,13 +1,12 @@
 var Twocheckout = require("../lib/2checkout.js");
 
 var tco = module.exports = new Twocheckout({
-    apiUser: "APIuser1817037",
-    apiPass: "APIpass1817037",
-    sellerId: "1817037",
-    privateKey: "9999999",
-    secretWord: "tango",
-    demo: false,
-    sandbox: false
+    apiUser: "api_username",
+    apiPass: "api_password",
+    sellerId: "seller_id",
+    privateKey: "private_key",
+    secretWord: "secret_word",
+    demo: true,
 });
 
 //global data
@@ -17,25 +16,25 @@ list = {
 
 //sale data
 sale_retrieve = {
-    sale_id: "4774380224"
+    sale_id: "250342762742"
 };
 sale_refund = {
-    sale_id: "4774380224",
+    sale_id: "250342762742",
     comment: "test",
     category: "5"
 };
 sale_ship = {
-    sale_id: "4774380224",
+    sale_id: "250342762742",
     tracking_number: "123"
 };
 sale_reauth = {
-    sale_id: "4774380224"
+    sale_id: "250342762742"
 };
 sale_stop = {
     lineitem_id: "4834917634"
 };
 sale_comment = {
-    sale_id: "4774380224",
+    sale_id: "250342762742",
     sale_comment: "nodejs test"
 };
 
@@ -52,36 +51,6 @@ product_data = {
     product_id: 123
 };
 
-//option data
-option_create = {
-    option_name: "test option",
-    option_value_name: "value name",
-    option_value_surcharge: "0.01"
-};
-option_update = {
-    option_id: 123,
-    option_name: "test option update"
-};
-option_data = {
-    option_id: 123
-};
-
-//coupon data
-coupon_create = {
-    date_expire: "2099-01-01",
-    type: "sale",
-    value_off: "0.01",
-    minimum_purchase: "0.03"
-};
-coupon_update = {
-    coupon_code: 123,
-    value_off: "0.02",
-    minimum_purchase: "0.03"
-};
-coupon_data = {
-    coupon_code: 123
-};
-
 //notification data
 notification = {
     invoice_id: "4632527490",
@@ -92,7 +61,7 @@ notification = {
 //response data
 response = {
     key: '7AB926D469648F3305AE361D5BD2C3CB',
-    order_number: '4774380224'
+    order_number: '4632527448'
 };
 
 //authorize data
@@ -101,8 +70,9 @@ authorize = {
     "token": "MWQyYTI0ZmUtNjhiOS00NTIxLTgwY2MtODc3MWRlNmZjY2Jh",
     "currency": "USD",
     "total": "10.00",
+    "demo": true,
     "billingAddr": {
-        "name": "Testing Tester",
+        "name": "John Doe",
         "addrLine1": "123 Test St",
         "city": "Columbus",
         "state": "Ohio",
@@ -118,7 +88,7 @@ params = {
     mode: '2CO',
     li_0_name: 'Test Product',
     li_0_price: '0.01',
-    card_holder_name: 'Testing Tester',
+    card_holder_name: 'John Doe',
     email: 'tester@2co.com',
     street_address: '123 test st',
     city: 'Columbus',

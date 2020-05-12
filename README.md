@@ -24,9 +24,7 @@ var tco = new Twocheckout({
     apiPass: "APIpass1817037",                              // Admin API Password, required for Admin API bindings
     sellerId: "1817037",                                    // Seller ID, required for all non Admin API bindings 
     privateKey: "3508079E-5383-44D4-BF69-DC619C0D9811",     // Payment API private key, required for checkout.authorize binding
-    secretWord: "tango",                                    // Secret Word, required for response and notification checks
-    demo: true,                                             // Set to true if testing response with demo sales
-    sandbox: false                                          // Uses 2Checkout sandbox URL for all bindings
+    secretWord: "tango"                                    // Secret Word, required for response and notification checks
 });
 ```
 
