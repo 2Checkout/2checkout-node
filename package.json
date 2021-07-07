@@ -1,19 +1,29 @@
 {
     "name": "2checkout-node",
     "version": "2.0.0",
-    "description": "A node.js wrapper for the 2Checkout Payment API.",
-    "main": "lib/2checkout.js",
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/2Checkout/2checkout-node.git"
+    "description": "2Checkout payment library",
+    "main": "Twocheckout.js",
+    "scripts": {
+        "test": "mocha './test/**/*.spec.js'",
+        "test-single": "mocha"
     },
-    "engines": {
-        "node": ">=10.19.0"
+    "keywords": [
+        "2Checkout",
+        "Verifone",
+        "payment",
+        "library"
+    ],
+    "author": "2Checkout",
+    "license": "MIT",
+    "dependencies": {
+        "crypto-js": "^4.0.0",
+        "date-format": "^3.0.0",
+        "got": "^11.8.2",
+        "jsonwebtoken": "^8.5.1"
     },
     "devDependencies": {
-        "mocha": "^1.13.0"
-    },
-    "dependencies": {
-        "got": "11.*"
+        "chai": "^4.3.4",
+        "chai-as-promised": "^7.1.1",
+        "mocha": "^8.3.2"
     }
 }
