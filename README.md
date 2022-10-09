@@ -1,4 +1,4 @@
-2Checkout Node.js Library
+DEPRECATED!!! This SDK can only be used with the legacy 2Checkout platform which is depreciated. Please use [2checkout-node-sdk](https://github.com/2Checkout/2checkout-node-sdk) with the current 2Checkout platform.
 =====================
 
 Full documentation for each binding is provided in the **[wiki](https://github.com/2Checkout/2checkout-node/wiki)**.
